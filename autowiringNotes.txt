@@ -1,0 +1,23 @@
+Autowiring 
+- It is a easy way to doing dependency Injection in spring.
+- There are 4 ways to achieve autowiring:
+	1. byName 
+	2. byType
+	3. constructor
+	4. autodetect/default
+
+1. byName 
+- name of the attribute in Person class should be same as the bean id/name inside the 
+  config file.
+ 
+2. byType
+- The data type of the attribute should be same as the data type of the bean defined in 
+  config file.
+
+3. consturctor
+- Spring container search the type of constructor argument inside the config file.
+
+4. autodetect/default
+- If we choose autodetect/default then autowire by constructor first. if not then autowire 
+  by Type.
+
